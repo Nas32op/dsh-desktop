@@ -1,6 +1,6 @@
 # 大啥鱼 — DeepSeek Harness Desktop
 
-📥 **点击下载**：[DeepSeek Harness Desktop v0.1.0（GitHub Release）](https://github.com/Nas32op/dsh-desktop/releases/tag/%E5%A4%A7%E5%95%A5%E9%B1%BCv0.1.0)
+📥 **点击下载**：[大啥鱼](https://github.com/Nas32op/dsh-desktop/releases/tag/%E5%A4%A7%E5%95%A5%E9%B1%BCv0.1.0)
 
 用 **Electron** 把 [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) 打包为纯净的桌面应用：开箱即用、无需安装 Node.js、与浏览器版完全一致。
 
