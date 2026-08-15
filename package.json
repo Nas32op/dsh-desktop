@@ -1,0 +1,21 @@
+{
+  "name": "deepseek-harness-desktop",
+  "productName": "DeepSeek Harness Desktop",
+  "version": "0.1.0",
+  "description": "大啥鱼 — DeepSeek Harness 桌面版：内置官方 Harness 运行时，开箱即用的纯净桌面应用",
+  "main": "main.js",
+  "author": "DeepSeek Harness Desktop contributors",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "prepare:resources": "node scripts/prepare-resources.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --win",
+    "dist:zip": "electron-builder --win zip",
+    "dist:nsis": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "43.4.0",
+    "electron-builder": "26.15.3"
+  }
+}

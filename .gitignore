@@ -1,0 +1,12 @@
+# 依赖与构建产物（不进仓库）
+node_modules/
+release/
+dist/
+
+# 内置运行时由 scripts/prepare-resources.js 从官方源生成
+resources/dsh/
+resources/node/
+
+# 其他
+*.log
+.DS_Store

@@ -1,0 +1,6 @@
+# pnpm 11 构建脚本白名单
+# electron 的 postinstall 需要下载预编译二进制，必须放行
+# electron-winstaller 用不到（我们不用 Squirrel.Windows 目标），关闭
+allowBuilds:
+  electron: true
+  electron-winstaller: false

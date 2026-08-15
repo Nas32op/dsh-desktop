@@ -1,0 +1,37 @@
+appId: com.deepseek.harness.desktop
+productName: DeepSeek Harness Desktop
+copyright: Copyright © 2025
+
+directories:
+  buildResources: build
+  output: release
+
+files:
+  - main.js
+  - package.json
+  - build/icon.png
+
+# 内置纯净的 DeepSeek Harness 运行时与 Node 运行时（不含任何本机数据）。
+# 拷贝在 scripts/afterPack.js 中完成（extraResources 会过滤掉根 node_modules）。
+afterPack: ./scripts/afterPack.js
+
+asar: true
+
+win:
+  icon: build/icon.ico
+  artifactName: deepseek-harness-desktop-${version}-win-${arch}.${ext}
+  target:
+    - target: zip
+      arch:
+        - x64
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: 大啥鱼
+  artifactName: deepseek-harness-desktop-${version}-setup.${ext}
